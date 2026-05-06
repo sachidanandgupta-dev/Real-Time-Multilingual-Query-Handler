@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  max-width: 600px;
+  width: 100%;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 2em;
+}
+
+.subtitle {
+  color: #666;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 0.95em;
+}
+
+.input-section {
+  margin-bottom: 30px;
+}
+
+.textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  resize: vertical;
+  margin-bottom: 15px;
+  transition: border-color 0.3s;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.textarea:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+.button {
+  width: 100%;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.info {
+  background-color: #f0f4ff;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 0.9em;
+  border-left: 4px solid #667eea;
+}
+
+.response-section {
+  margin-top: 20px;
+}
+
+.response-section h3 {
+  color: #333;
+  margin-bottom: 12px;
+  font-size: 1.1em;
+}
+
+.response-box {
+  background-color: #f8f9fa;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  color: #333;
+  line-height: 1.6;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .textarea {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+}

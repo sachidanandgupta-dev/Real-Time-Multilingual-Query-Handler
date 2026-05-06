@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+langdetect
+deep-translator
+openai
+python-dotenv
